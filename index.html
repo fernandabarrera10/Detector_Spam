@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Spam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Detector de Spam</h1>
+        <p>Ingresa un texto y verifica si es spam.</p>
+    </header>
+    
+    <main>
+        <form id="spam-form">
+            <label for="text-input">Texto a analizar:</label>
+            <textarea id="text-input" rows="5" placeholder="Escribe aquí el texto sospechoso..." required></textarea>
+            <button type="submit">Analizar</button>
+        </form>
+        
+        <section id="results">
+            <h2>Resultado</h2>
+            <div id="result-message">
+                <!-- Resultado de ejemplo; en una versión funcional, se actualizaría dinámicamente -->
+                <p class="spam">¡Alerta! Este texto parece ser spam. Contiene palabras clave como "oferta especial" y enlaces sospechosos.</p>
+                <p class="no-spam">Ejemplo de texto no spam: "Hola, ¿cómo estás?" - No detectado como spam.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Detector de Spam. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
